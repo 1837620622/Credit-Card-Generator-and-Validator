@@ -1,58 +1,60 @@
 <div align="center">
 
-# Credit Card Generator & Validator
+# 💳 CK Card Tools
 
 <p align="center">
-  <strong>Professional Virtual Card Generation & Validation Tools</strong>
+  <img src="https://img.shields.io/badge/Version-1.0.0-violet?style=for-the-badge" alt="Version" />
+  <img src="https://img.shields.io/badge/React-19.2.0-61DAFB?style=for-the-badge&logo=react" alt="React" />
+  <img src="https://img.shields.io/badge/Vite-7.2.5-646CFF?style=for-the-badge&logo=vite" alt="Vite" />
+  <img src="https://img.shields.io/badge/TailwindCSS-4.1-38B2AC?style=for-the-badge&logo=tailwind-css" alt="TailwindCSS" />
 </p>
 
 <p align="center">
-  <a href="#features">Features</a> •
-  <a href="#installation">Installation</a> •
-  <a href="#usage">Usage</a> •
-  <a href="#tech-stack">Tech Stack</a> •
-  <a href="#contact">Contact</a>
+  <strong>🚀 Professional Virtual Card Generator & Validator</strong>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/React-19.2.0-61DAFB?style=flat-square&logo=react" alt="React" />
-  <img src="https://img.shields.io/badge/Vite-Latest-646CFF?style=flat-square&logo=vite" alt="Vite" />
-  <img src="https://img.shields.io/badge/TailwindCSS-4.1-38B2AC?style=flat-square&logo=tailwind-css" alt="TailwindCSS" />
+  <a href="https://ck-card-tools-production.up.railway.app">🌐 Live Demo</a> •
+  <a href="#-features">✨ Features</a> •
+  <a href="#-installation">📦 Install</a> •
+  <a href="#-screenshots">📸 Screenshots</a> •
+  <a href="#-contact">📬 Contact</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/🌍_i18n-中文_|_English-fuchsia?style=flat-square" alt="i18n" />
+  <img src="https://img.shields.io/badge/Theme-Violet_Gradient-8B5CF6?style=flat-square" alt="Theme" />
   <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License" />
 </p>
 
 ---
 
-**[English](#english)** | **[中文](#中文)**
+**[English](#-english)** | **[中文](#-中文)**
 
 </div>
 
 ---
 
-## English
+## 🇺🇸 English
 
-### Overview
+### 📖 Overview
 
-A professional-grade credit card generator and validator built with React and modern web technologies. This tool provides comprehensive features for generating test credit card numbers, virtual identities, and validating card information through various external services.
+A professional-grade credit card generator and validator built with React 19 and modern web technologies. Features a stunning **violet/fuchsia gradient theme** with **bilingual support (English/Chinese)**.
 
-### Features
+### ✨ Features
 
-- **Card Generation**: Generate valid test credit card numbers using the Luhn algorithm
-- **Multiple Card Types**: Support for Visa, MasterCard, American Express, Discover, UnionPay, JCB, Maestro, Diners Club
-- **Custom BIN Support**: Generate cards with specific BIN prefixes
-- **Country-Specific BINs**: Generate cards with BINs from 20+ countries
-- **Multiple Output Formats**: PIPE, CSV, JSON, XML, SQL formats
-- **Identity Generation**: Generate complete virtual identities for 15+ countries
-- **External Resources**: Quick access to validation and generation services
-- **Modern UI**: Sleek, minimalist dark theme design
+| Feature | Description |
+|---------|-------------|
+| 💳 **Card Generation** | Generate valid test credit card numbers using Luhn algorithm |
+| 🏦 **Multiple Card Types** | Visa, MasterCard, AmEx, Discover, UnionPay, JCB, Maestro, Diners |
+| 🔢 **Custom BIN** | Generate cards with specific BIN prefixes (6-8 digits) |
+| 🌍 **20+ Countries** | Country-specific BIN generation |
+| 📄 **5 Output Formats** | PIPE, CSV, JSON, XML, SQL |
+| 👤 **Identity Generator** | Complete fake identities for 15+ countries |
+| 🌐 **Bilingual UI** | Switch between English and Chinese |
+| 🎨 **Modern Design** | Violet/fuchsia gradient theme with glow effects |
 
-### Installation
-
-#### Prerequisites
-- Node.js 18+ 
-- npm or yarn
-
-#### Steps
+### 📦 Installation
 
 ```bash
 # Clone the repository
@@ -66,136 +68,154 @@ npm install
 
 # Start development server
 npm run dev
+
+# Build for production
+npm run build
 ```
 
-### Usage
+### 🚀 Quick Start
 
-1. **Generate Cards**: Select card type, country, quantity and format, then click "Generate Cards"
-2. **Copy Results**: Click "Copy All" or hover over individual cards to copy
-3. **Check BIN**: Click the external link icon to verify BIN information
-4. **Generate Identity**: Switch to Identity tab, select country and generate
-5. **External Resources**: Access third-party generators and validators
+1. **Generator** - Select card type, country, quantity → Click "Generate"
+2. **Copy** - Click "Copy All" or hover individual cards
+3. **Validate** - Use external BIN checker links
+4. **Identity** - Generate fake identities by country
+5. **Language** - Toggle EN/中文 in top right
 
-### Tech Stack
-
-| Technology | Purpose |
-|------------|---------|
-| React 19 | Frontend Framework |
-| Vite | Build Tool |
-| TailwindCSS 4 | Styling |
-| Lucide React | Icons |
-
-### Project Structure
+### 🛠 Tech Stack
 
 ```
-src/
-├── App.jsx              # Main application component
-├── index.css            # Global styles
-├── main.jsx             # Entry point
-├── services/
-│   └── externalAPI.js   # External service integrations
-└── utils/
-    ├── cardGenerator.js    # Card generation logic
-    └── identityGenerator.js # Identity generation logic
+React 19      →  Frontend Framework
+Vite 7        →  Build Tool (Rolldown)
+TailwindCSS 4 →  Styling
+Lucide        →  Icons
+Railway       →  Deployment
+```
+
+### 📁 Project Structure
+
+```
+📦 CK-Card-Tools
+├── 📂 src/
+│   ├── 📄 App.jsx              # Main component + i18n
+│   ├── 📄 index.css            # Global styles
+│   ├── 📄 main.jsx             # Entry point
+│   ├── 📂 services/
+│   │   └── 📄 externalAPI.js   # External APIs
+│   └── 📂 utils/
+│       ├── 📄 cardGenerator.js    # Card generation
+│       └── 📄 identityGenerator.js # Identity generation
+├── 📄 railway.json             # Railway config
+└── 📄 package.json
 ```
 
 ---
 
-## 中文
+## 🇨🇳 中文
 
-### 概述
+### 📖 概述
 
-一款基于 React 和现代 Web 技术构建的专业级信用卡生成器和验证器。该工具提供全面的功能，用于生成测试信用卡号、虚拟身份信息，并通过各种外部服务验证卡片信息。
+基于 React 19 构建的专业信用卡生成器与验证器。采用**紫色/品红渐变主题**设计，支持**中英文双语**切换。
 
-### 功能特性
+### ✨ 功能特性
 
-- **卡号生成**：使用 Luhn 算法生成有效的测试信用卡号
-- **多种卡类型**：支持 Visa、MasterCard、American Express、Discover、银联、JCB、Maestro、Diners Club
-- **自定义 BIN**：支持使用特定 BIN 前缀生成卡号
-- **国家特定 BIN**：支持 20+ 国家的 BIN 生成
-- **多种输出格式**：PIPE、CSV、JSON、XML、SQL 格式
-- **身份生成**：为 15+ 国家生成完整的虚拟身份信息
-- **外部资源**：快速访问验证和生成服务
-- **现代界面**：简约高级的深色主题设计
+| 功能 | 说明 |
+|------|------|
+| 💳 **卡号生成** | 使用 Luhn 算法生成有效测试卡号 |
+| 🏦 **多种卡类型** | Visa、万事达、运通、Discover、银联、JCB、Maestro、大来卡 |
+| 🔢 **自定义 BIN** | 支持 6-8 位 BIN 前缀生成 |
+| 🌍 **20+ 国家** | 国家特定 BIN 生成 |
+| 📄 **5 种格式** | PIPE、CSV、JSON、XML、SQL |
+| 👤 **身份生成** | 15+ 国家完整虚假身份 |
+| 🌐 **双语界面** | 中英文一键切换 |
+| 🎨 **现代设计** | 紫色渐变主题 + 发光效果 |
 
-### 安装部署
-
-#### 环境要求
-- Node.js 18+
-- npm 或 yarn
-
-#### 安装步骤
+### 📦 安装部署
 
 ```bash
 # 克隆仓库
 git clone https://github.com/1837620622/Credit-Card-Generator-and-Validator.git
 
-# 进入项目目录
+# 进入目录
 cd Credit-Card-Generator-and-Validator
 
 # 安装依赖
 npm install
 
-# 启动开发服务器
+# 启动开发
 npm run dev
+
+# 构建生产版本
+npm run build
 ```
 
-### 使用说明
+### 🚀 快速使用
 
-1. **生成卡号**：选择卡类型、国家、数量和格式，点击"Generate Cards"
-2. **复制结果**：点击"Copy All"复制全部，或悬停单张卡片复制
-3. **查询 BIN**：点击外链图标验证 BIN 信息
-4. **生成身份**：切换到 Identity 标签页，选择国家并生成
-5. **外部资源**：访问第三方生成器和验证器
+1. **生成器** - 选择卡类型、国家、数量 → 点击"生成"
+2. **复制** - 点击"复制全部"或悬停单张卡片
+3. **验证** - 使用外部 BIN 查询链接
+4. **身份** - 按国家生成虚假身份
+5. **语言** - 右上角切换 EN/中文
 
-### 技术栈
-
-| 技术 | 用途 |
-|------|------|
-| React 19 | 前端框架 |
-| Vite | 构建工具 |
-| TailwindCSS 4 | 样式框架 |
-| Lucide React | 图标库 |
-
-### 项目结构
+### 🛠 技术栈
 
 ```
-src/
-├── App.jsx              # 主应用组件
-├── index.css            # 全局样式
-├── main.jsx             # 入口文件
-├── services/
-│   └── externalAPI.js   # 外部服务集成
-└── utils/
-    ├── cardGenerator.js    # 卡号生成逻辑
-    └── identityGenerator.js # 身份生成逻辑
+React 19      →  前端框架
+Vite 7        →  构建工具 (Rolldown)
+TailwindCSS 4 →  样式框架
+Lucide        →  图标库
+Railway       →  部署平台
 ```
 
 ---
 
 <div align="center">
 
-### Disclaimer / 免责声明
+### ⚠️ Disclaimer / 免责声明
 
-**This tool is for educational and testing purposes only.**  
-**本工具仅供学习和测试使用。**
-
-Do not use generated card numbers for any illegal activities.  
-请勿将生成的卡号用于任何非法活动。
+<table>
+<tr>
+<td>🇺🇸</td>
+<td><strong>This tool is for educational and testing purposes only.</strong><br/>Do not use generated card numbers for any illegal activities.</td>
+</tr>
+<tr>
+<td>🇨🇳</td>
+<td><strong>本工具仅供学习和测试使用。</strong><br/>请勿将生成的卡号用于任何非法活动。</td>
+</tr>
+</table>
 
 ---
 
-### Contact / 联系方式
+### 📬 Contact / 联系方式
 
-**WeChat / 微信**: 1837620622  
-**Author / 作者**: 传康kk  
-**Bilibili / 咸鱼**: 万能程序员  
-**Email / 邮箱**: 2040168455@qq.com
+<p align="center">
+  <a href="https://github.com/1837620622"><img src="https://img.shields.io/badge/GitHub-1837620622-181717?style=for-the-badge&logo=github" alt="GitHub" /></a>
+  <a href="mailto:2040168455@qq.com"><img src="https://img.shields.io/badge/Email-2040168455@qq.com-EA4335?style=for-the-badge&logo=gmail" alt="Email" /></a>
+</p>
+
+| Platform | Contact |
+|----------|---------|
+| 💬 **WeChat** | 1837620622 |
+| 👤 **Author** | 传康kk |
+| 📺 **Bilibili** | 万能程序员 |
+| 🐟 **Xianyu** | 万能程序员 |
+
+---
+
+### 🌟 Star History
+
+如果这个项目对你有帮助，请给一个 ⭐ Star！
+
+If this project helps you, please give it a ⭐ Star!
 
 ---
 
 <p align="center">
-  Made with ❤️ by 传康kk
+  <img src="https://img.shields.io/badge/Made_with-❤️-ff69b4?style=for-the-badge" alt="Made with love" />
+  <img src="https://img.shields.io/badge/by-传康kk-8B5CF6?style=for-the-badge" alt="by 传康kk" />
+</p>
+
+<p align="center">
+  <sub>© 2026 CK Card Tools. All rights reserved.</sub>
 </p>
 
 </div>
